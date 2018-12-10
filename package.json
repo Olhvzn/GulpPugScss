@@ -1,0 +1,23 @@
+{
+  "name": "puggulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp.spritesmith": "^6.9.0",
+    "normalize.scss": "^0.1.0"
+  }
+}

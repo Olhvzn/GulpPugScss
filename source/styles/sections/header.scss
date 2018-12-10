@@ -1,0 +1,39 @@
+.header{
+
+    &__top {
+        background-color: rgb(161, 157, 157);
+        border-bottom: 1px solid black;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 41px 0 32px;
+    }
+    
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contact {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 8px;
+    color: #424242;
+    transition: 0.3s;
+
+    &:hover {
+        color: lighten($color: #424242, $amount: 20%)
+    }
+
+    &:first-child {
+        margin-right: 8px;
+        padding-right: 18px;
+        border-right: 1px solid #686363;
+        opacity: 30%;
+    }
+}

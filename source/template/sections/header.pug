@@ -1,0 +1,25 @@
+header.header   
+    .header__top
+        .container
+            .contacts
+                a.contact(href="tel:+380936682186")
+                    i.fa.fa-mobile(aria-hidden = "true")
+                    span.contact__text 2545 2523
+
+                a.contact(href="mail:info@mail.com")
+                    i.far.fa-envelope.contact__icon.contact__icon--email(aria-hidden ="true")
+                    span.contact__text info@mail.com
+
+                a.facebook-icon(href = "facebook.com")
+                    i.fa.fa-facebook(aria-hidden="true")
+    .container
+        .header__bottom
+            .logo: img.logo__picture(src ="https://cdn0.iconfinder.com/data/icons/octicons/1024/home-64.png" alt ="picture")   
+            nav.nav 
+                - var items = ['Home', 'About us', 'Our Approch', 'Our Work']   
+                    each item in items
+                        if item == 'Home'
+                            a.nav__link.nav__link--active(href="google.com")= item
+                        else    
+                            a.nav__link(href="google.com")= item
+            a.button.header__button.button--red(href="google.com") Free Consultation        
